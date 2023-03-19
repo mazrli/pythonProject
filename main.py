@@ -2,6 +2,7 @@ from urllib import request
 
 from flask import Flask, jsonify
 
+
 app = Flask(__name__)
 
 @app.route('/users', methods=['GET'])
@@ -34,11 +35,4 @@ def delete_user(user_id):
 
 if __name__ == '__main__':
     app.run()
-import sqlite3
-import csv
 
-conn = sqlite3.connect('mydatabase.db')
-
-with open('users.csv') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader: "python.csv"
